@@ -1,0 +1,25 @@
+{
+  "source": "synthetic-fixture",
+  "note": "Titik ODP fiktif untuk pengujian GIS. Tidak ada koordinat situs nyata.",
+  "device_count": 3,
+  "devices": [
+    {
+      "odp_id": "ODP-SYNTH-01",
+      "lat": -7.25,
+      "lng": 110.4,
+      "source": "synthetic"
+    },
+    {
+      "odp_id": "ODP-SYNTH-02",
+      "lat": -7.31,
+      "lng": 110.45,
+      "source": "synthetic"
+    },
+    {
+      "odp_id": "ODP-SYNTH-03",
+      "lat": -7.19,
+      "lng": 110.52,
+      "source": "synthetic"
+    }
+  ]
+}

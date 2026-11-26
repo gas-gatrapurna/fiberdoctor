@@ -1,0 +1,29 @@
+# Binary hasil build
+bin/
+*.exe
+*.test
+
+# Kredensial tidak boleh masuk repo.
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+
+# Golden dump dari perangkat live: memuat Serial Number & nama pelanggan.
+# JANGAN di-commit ke repo publik. Fixture sintetis untuk test ada di
+# testdata/zte_c320_synth/ dan aman untuk dipublikasikan.
+data/
+
+# Go
+*.egg-info/
+vendor/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,8 @@
+System Description: C320 Version V2.1.0 Software, Copyright (c) by ZTE Corporation
+System ObjectId: .1.3.6.1.4.1.3902.1082.1001.320.2.1
+Started before: 17 days, 2 hours, 5 minutes
+Contact with: noc@example.com
+System name:  OLT-SYNTH-B
+Location: Synthetic Test Site B
+System Info:  165  56d41deb
+This system primarily offers a set of 78 services
