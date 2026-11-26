@@ -53,21 +53,6 @@ var defaultCommands = []string{
 	"show running-config",
 }
 
-// sampleCommands adalah perintah yang memerlukan satu ONU valid sebagai argumen.
-// ONU sampel dipilih OTOMATIS dari output `show gpon onu state`, sehingga tool
-// yang sama bisa dipakai untuk OLT mana pun tanpa konfigurasi ulang.
-func sampleCommands(onuID string) []string {
-	iface := "gpon-onu_" + onuID
-	return []string{
-		"show gpon onu detail-info " + iface,
-		"show pon power attenuation " + iface,
-		"show running-config interface " + iface,
-	}
-}
-
-// reFirstONU mengambil OnuIndex pertama dari tabel `show gpon onu state`.
-var reFirstONU = regexp.MustCompile(`(?m)^(\d+/\d+/\d+:\d+)\s`)
-
 var (
 	host    = flag.String("host", "", "IP OLT target (wajib diisi)")
 	name    = flag.String("name", "", "Nama OLT (wajib diisi; dipakai di manifest & default outdir)")
